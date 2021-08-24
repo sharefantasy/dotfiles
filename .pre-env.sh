@@ -4,7 +4,7 @@
 
 set -CeU
 
-mkdir -p ~/sources
+mkdir -p "${HOME}/sources"
 
 if ! command -v git &> /dev/null; then
   echo "no git. install it by any dump way"
