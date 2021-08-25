@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Save this file as ~/.config/yadm/bootstrap and make it executable. It will
 # execute all executable files (excluding templates and editor backups) in the
@@ -15,7 +15,7 @@ if [[ ! -d "$BOOTSTRAP_D" ]]; then
 fi
 
 
-"./$BOOTSTRAP_D/package.sh"
-"./$BOOTSTRAP_D/sudos.sh"
-"./$BOOTSTRAP_D/editor.sh"
-"./$BOOTSTRAP_D/settingsync.sh"
+bash $BOOTSTRAP_D/package.sh
+bash $BOOTSTRAP_D/sudos.sh
+bash $BOOTSTRAP_D/editor.sh
+bash $BOOTSTRAP_D/settingsync.sh
