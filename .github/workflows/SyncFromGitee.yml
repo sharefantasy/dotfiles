@@ -1,9 +1,7 @@
 on:
   schedule:
-    - cron: '0 1 * * *'  # 每天北京时间9, 21点运行
-    branches:
-      - main
-
+    - cron: '0 1,12 * * *'  # 每天北京时间9, 21点运行
+      
 jobs:
   build:
     runs-on: ubuntu-20.04
